@@ -1,0 +1,91 @@
+﻿@page "/"
+@using Syncfusion.Blazor.Grids
+
+
+<PageTitle>Home</PageTitle>
+
+<SfGrid DataSource="@Orders" AllowPaging="true">
+    <GridPageSettings PageSize="5"></GridPageSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    public List<Order> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = new List<Order>
+        {
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                },
+                new Order()
+                {
+                    OrderID = 0,
+                    CustomerID = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+                    OrderDate = DateTime.Now,
+                    Freight = "eq"
+                }
+                };
+
+    }
+    public class Order
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string Freight { get; set; }
+
+    }
+}

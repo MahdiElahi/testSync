@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSync", "TestSync\TestSync\TestSync.csproj", "{E0DD8268-2EAA-47E2-AF2E-E43143105F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSync.Client", "TestSync\TestSync.Client\TestSync.Client.csproj", "{E81925FF-D6C8-4049-9BB2-C79AFD599F85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0DD8268-2EAA-47E2-AF2E-E43143105F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0DD8268-2EAA-47E2-AF2E-E43143105F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0DD8268-2EAA-47E2-AF2E-E43143105F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0DD8268-2EAA-47E2-AF2E-E43143105F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81925FF-D6C8-4049-9BB2-C79AFD599F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81925FF-D6C8-4049-9BB2-C79AFD599F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81925FF-D6C8-4049-9BB2-C79AFD599F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81925FF-D6C8-4049-9BB2-C79AFD599F85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6BDF75C-CCCA-4C60-B589-1EAF8CE6808B}
+	EndGlobalSection
+EndGlobal
